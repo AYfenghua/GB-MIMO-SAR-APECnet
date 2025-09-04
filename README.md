@@ -10,5 +10,16 @@ The format of the dataset is in the.h5 format, which is a commonly used data for
 
 Due to the large size of the dataset and the confidentiality of the content, only the data sets of the first three scenarios have been uploaded at present. The complete dataset and the code will be uploaded after the paper is published. The data link can be accessed at:
 
-## Specific parameters of the radar
-In the design and generalization experiments, the specific parameters of the MIMO radar we adopted are as follows: carrier frequency 24GHz, bandwidth 250MHz, detection distance 2km, detection range ±45°, number of transmission channels 16, number of reception channels 8, equivalent to 128 virtual channels, range resolution 0.6m, azimuth resolution 0.78°.
+## Specific parameters of MIMO radar
+In the design and generalization experiments, the specific parameters of the MIMO radar we adopted are as follows: 
+| parameters         | target       |
+| ------------ | ---------- |
+| carrier frequency         | 24GHz      |
+| bandwidth         | 200MHz     |
+| detection distance     | 2000m      |
+| detection range | -45°～45° |
+| transmission channels   | 16         |
+| reception channels   | 8          |
+| virtual channels | 128       |
+| range resolution | 0.6m     |
+| azimuth resolution | 0.78°     |
