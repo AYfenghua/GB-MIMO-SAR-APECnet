@@ -1,7 +1,9 @@
 # GB-MIMO-SAR-APECnet
 This is the data source and code regarding the use of the neural network (APECnet) to correct the amplitude-phase error problem existing in the ground-based MIMO SAR system.
 
-## Source of the dataset
+## The source and construction of the dataset
 Eight RAW SAR images are acquired from https://asf.alaska.edu/. The data can be easily obtained by searching the scene name (ALPSRP020160970, ALPSRP054200670, ALPSRP103336310, ALPSRP110940620, ALPSRP115120970, ALPSRP268560540, ALPSRP269950430, ALPSRP273680670) in https://search.asf.alaska.edu/. 
 
-An 8192×8192-sized data block was selected from the image as the original image data. According to the method described in the paper, it was divided into 2048 original sub-images with a size of 128×256. Ten sets of random amplitude-phase errors were applied to the orientation dimension of the sub-images, resulting in a defocus data set of 8×20480×128×256.
+Select a data block of size 8192×8192 from the image as the original image data. According to the method described in the paper, each scene image is divided into 2048 original sub-images of size 128×256. Randomly select 1600 of these sub-images as the source of the data set. Apply 10 groups of random amplitude-phase errors to the orientation dimension of the sub-images, and obtain an original defocus data set of size 8×16000×128×256.
+
+The format of the dataset is in the.h5 format, which is a commonly used data format. In each scene dataset, there are three key data: one represents the amplitude error(gain_error), another represents the phase error(phase_error), both with a size of 16000×24, indicating the amplitude and phase error values of the actual channels corresponding to 16000 defocused images; the last data represents the image data(unfocus_img), with a size of 16000×128×256×2, representing 16000 image data with a size of 128×256, presented in real part and imaginary part.
