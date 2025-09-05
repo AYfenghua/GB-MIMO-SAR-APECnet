@@ -18,8 +18,8 @@ In the design and generalization experiments, the specific parameters of the MIM
 | bandwidth         | 200MHz     |
 | detection distance     | 2000m      |
 | detection range | -45°～45° |
-| transmission channels   | 16         |
-| reception channels   | 8          |
+| transmitting channels   | 16         |
+| receiving channels   | 8          |
 | virtual channels | 128       |
 | range resolution | 0.6m     |
 | azimuth resolution | 0.78°     |
